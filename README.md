@@ -7,5 +7,7 @@ https://github.com/shihyu/python_ebook/blob/master/NumPy/NumPy%20Beginner's%20Gu
 『ゼロから作る Deep Learning』のリポジトリ
 https://github.com/oreilly-japan/deep-learning-from-scratch
 
+很多書
+https://github.com/shihyu/python_ebook
 
 
