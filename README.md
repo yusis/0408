@@ -4,3 +4,8 @@ https://github.com/shihyu/python_ebook/blob/master/NumPy/Python%E6%95%B0%E6%8D%A
 NumPy Beginner's Guide(3rd).pdf
 https://github.com/shihyu/python_ebook/blob/master/NumPy/NumPy%20Beginner's%20Guide(3rd).pdf
 
+『ゼロから作る Deep Learning』のリポジトリ
+https://github.com/oreilly-japan/deep-learning-from-scratch
+
+
+
