@@ -1,3 +1,35 @@
+
+# pandas.DataFrame
+https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.append.html
+
+# pandas 先建立list 轉成series
+from pandas import Series
+a = [1, 2, 3, 4]
+s = Series(a)
+s.index
+s.values
+s1 = Series(a, index=['A','B','C','D'])
+
+# 先建立字典 轉成series 
+import numpy as np
+s2 = Series(np.arange(5))
+d = {'A':1,'B':2,'C':3,'D':4}
+s3 = Series(d)
+s3.index
+s3.values
+s3.to_dict()
+s3['A']
+s3[s3>2]
+type(s3[s3>2])
+s3.max()
+s3.min()
+s3.pop('A')
+b = s3.pop('B')
+s4 = Series(s3, index=['B','C','D'])
+s4.isnull()
+s5 = Series(s4, index=['C','D'])
+
+
 # coding: utf-8
 import numpy as np
 import matplotlib.pyplot as plt
