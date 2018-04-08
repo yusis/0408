@@ -1,6 +1,32 @@
 
+
 # pandas.DataFrame
 https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.append.html
+
+# DataFrame
+import numpy as np
+import pandas as pd
+from pandas import Series,DataFrame
+link = 'https://www.tiobe.com/tiobe-index/'
+import webbrowser
+webbrowser.open(link)
+df = pd.read_clipboard()  #不要先執行  要先去用滑鼠複製後再執行
+df  #顯示
+
+df.columns
+df.index
+df_new = DataFrame(df, columns=['Programming Language','Oct 2017'])
+df_new['Oct 2018']
+df_new['Oct 2018'] = range(0,10)
+df_new = DataFrame(df, columns=['Programming Language','Oct 2017','Oct 2018'])
+df_new['Oct 2018'] = Series([100,200], index=[2,3])
+df[0:4]
+type(df.loc[0])
+df.loc[0:3,['Oct 2016', 'Programming Language']]
+df.loc[[2,5],['Oct 2016', 'Programming Language']]
+df.iloc[0:3, 0:3]
+df.head()
+df.tail()
 
 # pandas 先建立list 轉成series
 from pandas import Series
