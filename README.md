@@ -1,3 +1,38 @@
+# DataFrame IO Operation
+import numpy as np
+import pandas as pd
+from pandas import Series, DataFrame
+df = pd.read_clipboard()
+df.to_csv('df_io.csv',index=False)
+!dir
+!type df_io.csv
+pd.read_csv('df_io.csv')
+df_json = df.to_json()
+pd.read_json(df_json)
+
+
+# Relationship between Series and DataFrame
+import numpy as np
+import pandas as pd
+from pandas import Series, DataFrame
+data = {
+    'Country': ['China', 'India', 'Brazil'],
+    'Capital': ['Beijing', 'New Delhi', 'Brasilia'],
+    'Population': ['1432732201', '1303171635', '207847528']
+}
+df = DataFrame(data, index=['A','B','C'])
+df[0:2]
+df.iloc[0:2, 1:2]
+df.loc[['A','B']]
+for row in df.iterrows():
+    print(row[0],row[1])
+    break
+s1 = Series(data['Capital'])
+s2 = Series(data['Country'])
+s3 = Series(data['Population'])
+df_new = DataFrame([s1,s2,s3], index=['Capital', 'Country', 'Population'])
+df_new = df_new.T
+
 
 
 # pandas.DataFrame
